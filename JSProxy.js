@@ -205,7 +205,7 @@ class JSProxy{
 
             if( ! this.satisfy[ prop ]){
                 obj[ prop ] = value
-                return
+                return true
             }
 
             if( this.satisfy[ prop ].match(/^object/) ){
