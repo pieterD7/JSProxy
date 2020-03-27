@@ -228,6 +228,8 @@ class JSProxy{
 
             if( propReqs.indexOf( 'number' ) == 0){
                 value = this.prepareNumber( compare, value)
+                if( value === false)
+                    return false
             }
 
             if( this.canAssignValue( value, checkInstance, propReqs, prop)){
